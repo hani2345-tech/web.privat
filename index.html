@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pondok Pesantren Darul Falah Sukorejo</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Menambahkan Google Font untuk font estetik -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #c6e0f7;
+      color: #f4f2f9;
+      scroll-behavior: smooth;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(to right, #af8fd0, #2575fc);
+      padding: 1rem 2rem;
+      color: white;
+    }
+
+    .logo {
+      max-width: 50px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    nav h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-family: 'Dancing Script', cursive;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s, text-decoration 0.3s;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+      color: #ffeb3b;
+    }
+
+    * Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+    }
+      nav ul {
+        flex-direction: column; /* Make menu items stack vertically */
+        gap: 0.5rem; /* Add some spacing between items */
+    }
+
+    nav ul li a {
+    font-size: 1.2rem; /* Ukuran font yang lebih besar agar mudah dibaca di ponsel */
+    }
+
+ header {
+      background: url(WhatsApp-Image-2021-01-30-at-18.22.59-1100x525.jpeg) center/cover no-repeat fixed;
+      color: rgb(250, 248, 248);
+      padding: 6rem 2rem;
+      text-align: left;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+    
+    /* Ensure responsiveness of cards in different screen sizes */
+    @media (max-width: 768px) {
+      .digitalisasi-container {
+        display: block;
+      }
+    }
+
+.digitalisasi-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.digitalisasi-card {
+  position: relative;
+  display: block;
+  width: 320px;
+  height: 380px;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.digitalisasi-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.digitalisasi-card .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* overlay gelap */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.digitalisasi-card h3 {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  color: #ededf2;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.digitalisasi-card p {
+  font-size: 1rem;
+  color: #f9ffff;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  font-style: italic;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.05);
+}
+
+.digitalisasi-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ffffff;
+  background-color: #e0e1e8;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.digitalisasi-card a:hover {
+  background-color: #cecfd4;
+}
+
+/* Ganti ini dengan gambar latar Anda */
+.bg-digitalisasi-1 {
+  background-image: url('bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.bg-digitalisasi-2 {
+  background-image: url('bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.bg-digitalisasi-3 {
+  background-image: url('bg3.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.bintangKreasiSantri-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 3rem;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    overflow-x: auto;
+}
+
+.bintangKreasiSantri-card {
+    position: relative;
+    display: block;
+    width: 320px;
+    height: 380px;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bintangKreasiSantri-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.bintangKreasiSantri-card .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* overlay gelap */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.bintangKreasiSantri-card h3 {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    color: #ededf2;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.bintangKreasiSantri-card p {
+    font-size: 1rem;
+    color: #f9ffff;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+    font-style: italic;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.05);
+}
+
+.bintangKreasiSantri-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #ffffff;
+    background-color: #e0e1e8;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.bintangKreasiSantri-card a:hover {
+    background-color: #303f9f;
+}
+
+/* Background images for each section */
+.bg-bintangKreasiSantri-1 {
+    background-image: url('path_to_sports_image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.bg-bintangKreasiSantri-2 {
+    background-image: url('path_to_arts_image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.bg-bintangKreasiSantri-3 {
+    background-image: url('path_to_science_image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.bg-bintangKreasiSantri-4 {
+    background-image: url('path_to_leadership_image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#kontak {
+  background-color: #2c3e50;
+  color: white;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  background-color: #f1c40f; /* Warna kuning cerah */
+  color: #2c3e50;
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 300px;
+  justify-content: space-between;
+  font-size: 1.2em;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-item i {
+  font-size: 1.5em;
+}
+
+.contact-item:hover {
+  background-color: #e67e22; /* Warna hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.contact-item span {
+  margin-left: 10px;
+}
+
+.contact-item i,
+.contact-item span {
+  transition: color 0.3s;
+}
+
+.contact-item:hover i,
+.contact-item:hover span {
+  color: white; /* Ubah warna ikon dan teks saat hover */
+}
+
+.contact-item a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: white;
+}
+
+    footer {
+      background-color: #4a47a3;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    footer:hover {
+      background-color: #6a11cb;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="logo.png.png" alt="Logo Pondok Darul Falah" class="logo"> <!-- Logo Pondok Darul Falah -->
+    <h1>Pondok Pesantren Darul Falah Sukorejo</h1>
+    <ul>
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#digitalisasi">Digitalisasi Pendidikan</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <header id="beranda">
+    <h1><a href="#digitalisasi" style="color:rgb(246, 249, 252); text-decoration:none;">Selamat Datang di PonPes Darul Falah</a></h1>
+    <p>Pusat pengembangan potensi santri yang mengakselerasi bakat dan kreativitas menuju keunggulan di era digital.</p>
+  </header>
+
+  <section id="digitalisasi">
+    <h2 style="background-color:rgb(156, 162, 165);">Darul Falah: Pusat Pembinaan Generasi Berakhlak Digital</h2>
+    
+    <div class="digitalisasi-container">
+  <a href="https://hani2345-tech.github.io/private.web/" class="digitalisasi-card bg-digitalisasi-1">
+    <div class="overlay">
+      <h3>Kelas Digitial Pondok Pesantren Darul Falah</h3>
+      <p>Belajar pakai laptop, proyektor, dan tablet? Sudah biasa bagi santri zaman now mahir teknologi, tetap berakar pada nilai-nilai pesantren.</p>
+    </div>
+  </a>
+
+  <a href="https://sis.darulfalah.id/auth/login" class="digitalisasi-card bg-digitalisasi-2">
+    <div class="overlay">
+      <h3>Administrasi Berbasis Data</h3>
+      <p>Pengelolaan data santri dan administrasi pondok mulai menggunakan sistem komputerisasi untuk meningkatkan efisiensi dan akurasi.</p>
+    </div>
+  </a>
+
+  <a href="https://darulfalah.id/" class="digitalisasi-card bg-digitalisasi-3">
+    <div class="overlay">
+      <h3>Website Tagline</h3>
+      <p>Website resmi pondok menjadi pusat informasi dan komunikasi antara pondok dengan wali santri serta masyarakat umum.</p>
+    </div>
+  </a>
+</div>     
+</section>
+ <section id="kontak">
+  <h2>Kontak Kami</h2>
+  
+  <div class="contact-container">
+    <div class="contact-item">
+      <i class="fas fa-fax"></i>
+      <span><a href="https://darulfalah.id/" target="_blank">darulfalah.id</a></span>
+    </div>
+    <div class="contact-item">
+      <i class="fab fa-whatsapp"></i>
+      <span><a href="https://wa.me/62895424359292" target="_blank">WhatsApp</a></span>
+    </div>
+    <div class="contact-item">
+      <i class="fab fa-instagram"></i>
+      <span><a href="https://www.instagram.com/darulfalahsukorejo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></span>
+    </div>
+    <div class="contact-item">
+      <i class="fab fa-facebook-f"></i>
+      <span><a href="https://www.facebook.com/profile.php?id=100024499846124&locale=id_ID" target="_blank">Facebook</a></span>
+    </div>
+  </div>
+</section>
+  <footer>
+    <p>&copy; 2025 Pondok Darul Falah. All rights reserved.</p>
+  </footer>
+</body>
+</html>
